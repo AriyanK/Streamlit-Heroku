@@ -8,6 +8,5 @@ increment = st.button('Increment')
 if increment:
     st.session_state.count += 1
 st.write('Count = ', st.session_state.count)
-path = "C:/Users/skay9/Documents/Ary's_Stuff/MachineLearning/"
-bikeData = pd.read_csv(path + 'housing.csv')
+bikeData = pd.read_csv('housing.csv')
 st.write(bikeData.describe())
