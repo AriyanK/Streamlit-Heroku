@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import streamlit as st
 st.title('Counter Example')
 if 'count' not in st.session_state:
     st.session_state.count = 0
