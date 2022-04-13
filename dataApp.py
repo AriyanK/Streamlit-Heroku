@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 st.title('Counter Example')
+
+if 'key' not in st.session_state:
+    st.session_state.key = 'value'
+
 if 'count' not in st.session_state:
     st.session_state.count = 0
 increment = st.button('Increment')
@@ -10,3 +14,5 @@ if increment:
 st.write('Count = ', st.session_state.count)
 bikeData = pd.read_csv('housing.csv')
 st.write(bikeData.describe())
+
+st.markdown('## Comments')
